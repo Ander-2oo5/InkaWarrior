@@ -27,8 +27,8 @@ export function ContactView() {
     {
       icon: Phone,
       title: 'Teléfono',
-      detail: '+51 999 123 456',
-      action: 'tel:+51999123456',
+      detail: '+51 962 324 614',
+      action: 'tel:+51962324614',
     },
     {
       icon: Mail,
@@ -196,7 +196,7 @@ export function ContactView() {
                     ¿Prefieres contactarnos por WhatsApp?
                   </p>
                   <Button
-                    onClick={() => window.open('https://wa.me/51999123456', '_blank')}
+                    onClick={() => window.open('https://wa.me/51962324614?text=Hola,%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios%20y%20eventos.%20Gracias', '_blank')}
                     className="w-full bg-green-500 hover:bg-green-600 text-white"
                   >
                     <svg
