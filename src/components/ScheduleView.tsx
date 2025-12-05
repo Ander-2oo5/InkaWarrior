@@ -167,15 +167,15 @@ export function ScheduleView({ onNavigate }: ScheduleViewProps) {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.1 * dayIndex }}
             >
-              <Card className="h-full hover:shadow-xl transition-all border-t-4 border-t-[#2E86C1]">
-                <CardHeader className="bg-gradient-to-r from-[#004080] to-[#2E86C1] text-white">
+              <Card className="h-full hover:shadow-xl transition-all border-t-4 border-t-[#2E86C1] rounded-2xl overflow-hidden">
+                <CardHeader className="bg-gradient-to-r from-[#004080] to-[#2E86C1] text-white rounded-t-2xl">
                   <CardTitle className="text-center">{daySchedule.day}</CardTitle>
                 </CardHeader>
                 <CardContent className="p-4 space-y-3">
                   {daySchedule.classes.map((classItem, classIndex) => (
                     <div
                       key={classIndex}
-                      className="bg-gradient-to-br from-[#E8F4F8] to-[#D6E9F5] p-4 rounded-lg hover:shadow-lg hover:scale-[1.02] transition-all border border-[#2E86C1]/20"
+                      className="bg-gradient-to-br from-[#E8F4F8] to-[#D6E9F5] p-4 rounded-2xl hover:shadow-lg hover:scale-[1.02] transition-all border border-[#2E86C1]/20"
                     >
                       <div className="flex items-center gap-2 mb-2">
                         <Clock className="w-4 h-4 text-[#2E86C1]" />

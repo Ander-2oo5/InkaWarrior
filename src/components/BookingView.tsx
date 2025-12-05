@@ -223,8 +223,8 @@ export function BookingView({ user, onNavigate }: BookingViewProps) {
               </CardContent>
             </Card>
           ) : currentStep === 'form' ? (
-            <Card>
-              <CardHeader className="bg-gradient-to-r from-[#004080] to-[#2E86C1] text-white">
+            <Card className="rounded-2xl overflow-hidden">
+              <CardHeader className="bg-gradient-to-r from-[#004080] to-[#2E86C1] text-white rounded-t-2xl">
                 <CardTitle>Formulario de Reserva</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
@@ -342,8 +342,8 @@ export function BookingView({ user, onNavigate }: BookingViewProps) {
               </CardContent>
             </Card>
           ) : (
-            <Card>
-              <CardHeader className="bg-gradient-to-r from-[#004080] to-[#2E86C1] text-white">
+            <Card className="rounded-2xl overflow-hidden">
+              <CardHeader className="bg-gradient-to-r from-[#004080] to-[#2E86C1] text-white rounded-t-2xl">
                 <CardTitle>Método de pago</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
@@ -368,7 +368,7 @@ export function BookingView({ user, onNavigate }: BookingViewProps) {
                   {/* Tarjeta de crédito/débito */}
                   <Button
                     onClick={() => handlePaymentMethodClick('card')}
-                    className="w-full h-auto py-6 bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 hover:border-[#2E86C1] justify-start"
+                    className="w-full h-auto py-6 bg-white hover:bg-blue-50 text-gray-800 border-2 border-gray-200 hover:border-[#2E86C1] justify-start"
                     variant="outline"
                   >
                     <CreditCard className="w-6 h-6 mr-3 text-[#2E86C1]" />
@@ -378,7 +378,7 @@ export function BookingView({ user, onNavigate }: BookingViewProps) {
                   {/* Yape */}
                   <Button
                     onClick={() => handlePaymentMethodClick('yape')}
-                    className="w-full h-auto py-6 bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 hover:border-purple-500 justify-start"
+                    className="w-full h-auto py-6 bg-white hover:bg-purple-50 text-gray-800 border-2 border-gray-200 hover:border-purple-500 justify-start"
                     variant="outline"
                   >
                     <Smartphone className="w-6 h-6 mr-3 text-purple-600" />
@@ -388,7 +388,7 @@ export function BookingView({ user, onNavigate }: BookingViewProps) {
                   {/* Plin */}
                   <Button
                     onClick={() => handlePaymentMethodClick('plin')}
-                    className="w-full h-auto py-6 bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 hover:border-pink-500 justify-start"
+                    className="w-full h-auto py-6 bg-white hover:bg-pink-50 text-gray-800 border-2 border-gray-200 hover:border-pink-500 justify-start"
                     variant="outline"
                   >
                     <Wallet className="w-6 h-6 mr-3 text-pink-600" />
@@ -398,7 +398,7 @@ export function BookingView({ user, onNavigate }: BookingViewProps) {
                   {/* PayPal */}
                   <Button
                     onClick={() => handlePaymentMethodClick('paypal')}
-                    className="w-full h-auto py-6 bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 hover:border-blue-500 justify-start"
+                    className="w-full h-auto py-6 bg-white hover:bg-blue-50 text-gray-800 border-2 border-gray-200 hover:border-blue-500 justify-start"
                     variant="outline"
                   >
                     <CreditCard className="w-6 h-6 mr-3 text-blue-600" />
