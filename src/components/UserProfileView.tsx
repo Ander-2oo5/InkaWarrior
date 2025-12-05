@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { Calendar, Clock, MapPin, User, Mail, Phone, CheckCircle, XCircle, CalendarClock } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import {
   AlertDialog,
   AlertDialogAction,

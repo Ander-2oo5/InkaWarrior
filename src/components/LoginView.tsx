@@ -6,7 +6,7 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { User, Mail, Lock, Phone, Waves } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 
 interface LoginViewProps {
@@ -268,7 +268,7 @@ export function LoginView({ onLogin, onNavigate }: LoginViewProps) {
                       <Label htmlFor="register-level">Nivel de experiencia</Label>
                       <Select
                         value={registerData.level}
-                        onValueChange={(value) => setRegisterData({ ...registerData, level: value })}
+                        onValueChange={(value: string) => setRegisterData({ ...registerData, level: value })}
                       >
                         <SelectTrigger className="border-[#2E86C1]/30">
                           <SelectValue placeholder="Selecciona tu nivel" />
