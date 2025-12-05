@@ -56,7 +56,7 @@ export default function App() {
       case 'events':
         return <EventsView />;
       case 'booking':
-        return <BookingView />;
+        return <BookingView user={user} onNavigate={setActiveView} />;
       case 'contact':
         return <ContactView />;
       case 'login':
